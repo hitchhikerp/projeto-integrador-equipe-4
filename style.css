@@ -51,10 +51,11 @@ header .menu ul {
     align-items: center;
 }
 
-.logomarca {
+a {
+    text-decoration: none;
+    color: #FFFFFF;
     margin: 0;
     padding: 0;
-    color: #FFFFFF;
 }
 
 header .menu ul li {
@@ -65,4 +66,8 @@ header .menu ul li {
 header .menu ul li a {
     text-decoration: none;
     color: #FDFDFD;
+}
+ 
+header .menu ul li a:hover {
+    color: #bdbdbd;
 }
