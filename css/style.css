@@ -33,3 +33,32 @@ header .menu ul li a {
     text-decoration: none;
     color: #FDFDFD;
 }
+/* meel */
+
+main .card-img1{ 
+    width: 300px;
+}
+main .card-img{ 
+    width: 500px;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .planos {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+main ul {
+    text-align: center;
+    list-style: none;
+}
+main ul li {
+    font-size: 15px;
+}
+main .card-1, .card-2, .card-3 {
+    border: 10px solid #00BCD4;
+}
+/* meel */
