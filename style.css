@@ -1,34 +1,60 @@
-/* font's  */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;700&family=Roboto:wght@400;700&display=swap');
 
-
-/* fim da font's */
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
-
-/* inicil menu */
-
 
 .menu img {
     display: flex;
     justify-content: start;
 }
+
 header .logo {
     text-align: center;
 }
 
 header .menu {
-    background-color: #9c27b0;
+    background-color: #7B1FA2;
     display: flex;
     justify-content: end;
     justify-content: space-around;
 }
 
 header .menu ul {
-    margin: 0;
+    margin: 0 55px;
     list-style: none;
     padding: 0;
+}
+
+.logo {
+    display: flex;
+    margin: 15px;
+}
+
+.menu nav {
+    width: 100%;
+    height: 55px;
+}
+
+.menu nav img {
+    width: 22px;
+    height: 22px;
+    margin: 0 5px;
+}
+
+.icone-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logomarca {
+    margin: 0;
+    padding: 0;
+    color: #FFFFFF;
 }
 
 header .menu ul li {
@@ -40,14 +66,3 @@ header .menu ul li a {
     text-decoration: none;
     color: #FDFDFD;
 }
-/* fim menu */
-/* baner/carousel  */
-.banner {
-    width: 100%;
-    height: 600px;
-background-image: linear-gradient(to bottom, #e1bee7, #fff, #e1bee7);
-background-repeat: no-repeat;
-background-position: center center;
-
-}
-/* fim do banner/carousel  */
