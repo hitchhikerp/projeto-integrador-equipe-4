@@ -82,8 +82,6 @@ header .menu ul li a:hover {
     background-position: center center;
 }
 
-/* meel */
-
 main .card-img1{ 
     width: 300px;
 }
@@ -186,6 +184,57 @@ main .card-1, .card-2, .card-3 {
     float: right;
 }
 
+main.status {
+    display: flex;
+    justify-content: space-around;
+    margin: 150px 88px;
+}
+
+main .texto-solicita h1.titulo-status {
+    color: #7B1FA2;
+    font-size: 38px;
+}
+
+main .texto-solicita .texto-status {
+    font-size: 18px;
+    width: 320px;
+}
+
+.caixa-status {
+    padding: 22px;
+    margin: 22px;
+    border: 1px solid #bdbdbd;
+    border-radius: 20px;
+    width: 308px;
+}
+
+.caixa-status input {
+    width: 244px;
+    height: 24px;
+    margin: 6px 22px;
+    border-radius: 5px;
+    border: 1px solid #757757;
+}
+
+main section input {
+    width: 88px;
+}
+
+main form{
+    display: block;
+    justify-content: center;
+    text-align: center;
+}
+
+main form button {
+    width: 228px;
+    height: 34px;
+    color: #FDFDFD;
+    background-color: #7B1FA2;
+    border: 1px solid #7B1FA2;
+    border-radius: 5px;
+    margin: 10px 28px;
+}
 
 footer {
     background-color: #7B1FA2;
