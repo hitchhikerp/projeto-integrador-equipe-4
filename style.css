@@ -68,6 +68,8 @@ header .menu ul li a:hover {
     color: #bdbdbd;
 }
 
+/* mateus */
+
 .banner {
     width: 100%;
     height: 600px;
@@ -75,6 +77,73 @@ header .menu ul li a:hover {
     background-repeat: no-repeat;
     background-position: center center;
 }
+
+/* carousel inico */
+  
+  .carousel {
+    width: 500px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    background-color: transparent; /* Adicionado para tornar o fundo transparente */
+  }
+  
+  .carousel-image {
+    width: 100%;
+    height: 100%;
+    display: none;
+  }
+  
+  .carousel-image.active {
+    display: block;
+  }
+  
+  .carousel-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Adicionado para ajustar o tamanho da imagem */
+  }
+  
+  .carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 400px;
+    transform: translateY(-50%);
+    padding: 10px;
+    color: #a5f80b;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0);
+   width: 100px;
+  }
+  
+  .carousel-navigation {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+  
+  .carousel-navigation button {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: none;
+    background-color: #ccc;
+    margin: 0 5px;
+    border-radius: 50%;
+    padding: 0;
+    cursor: pointer;
+  }
+  
+  .carousel-navigation button.active {
+    background-color: #333;
+  }
+  
+  /* carousel fim */
+  
 /* meel */
 main .card-img1{ 
     width: 300px;
@@ -162,7 +231,7 @@ main .card-1, .card-2, .card-3 {
 .img-vertical {
     width: 65%;
     height: 700px;
-    background-image: url(../imagens/Velocity-elemento1.png);
+    background-image: url(imagens/Velocity-elemento1.png);
     background-size: cover;
     background-position: center;
     border-radius: 30px;
@@ -235,3 +304,5 @@ footer h4 {
     font-size: 16px;
     text-align: center;
 }
+
+  
