@@ -153,91 +153,146 @@ header .menu ul li a:hover {
 /* carousel fim */
 
 /* meel */
-
-main .card-img1 {
-    width: 300px;
+section.planos .container {
+    min-height: 500px;
+    width: 700px;
+    max-width: 100%;
+    /* largura */
+    margin: 0 auto;
+    /* espaçamento automatico para centralizar o container */
+    padding: 0 15px;
 }
 
-main .card-img {
-    width: 500px;
-    background-position: center;
+.lista-planos article.card{
+    border-radius: 2px #7B1FA2;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;    
+
 }
 
-main .planos {
+.lista-planos {
+    display: flex;
+    /* ativando flexbox */
+    justify-content: space-between;
+    /* espaçamento igual ao redor dos elementos (horizontal) */
+    align-items: flex-start;
+    /* todos os elementos alinhados ao topo */
+    flex-wrap: wrap;
+    /* permite que aconteça a quebra de linha */
+}
+
+
+.lista-planos article{
+    border:1px solid #000000;
+    align-items: center;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
+    width: 150px;/*largura do article*/
+    text-align: center; /*centralizando tudo no article*/
+    margin-bottom: 40px; /*espçamento inferior*/
 }
 
-main ul {
+.lista-planos article h3{
+    font-size: 20px;
+}
+
+.lista-planos article a{
+    background-color: #7B1FA2; /*cor de fundo*/
+    color: #fff; /*cor do texto*/ 
+    font-size: 15px; /*tamanho da letra*/
+    font-weight: bold; /*grossura da letra*/
+    padding: 5px 30px; /*espaçamento interno do botão*/
+    text-decoration: none; /*tirar sublinhado do link*/
+}
+
+
+
+.lista-planos article .imagem-planos {
+    width: 150px;
+    /* imagem vai ocupar 100% de largura do article */
+    height: 150px;
+    /* altura do thumb */
+    background-size: cover;
+    /* imagem cobre todo o elemento */
+    background-repeat: no-repeat;
+    /* imagem não se repete */
+    background-position: center;
+    /* imagem centralizada */
+}
+
+
+.titulo {
+    display: flex;
     text-align: center;
-    list-style: none;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 100%;
 }
 
-main ul li {
-    font-size: 15px;
-}
-
-main .card-1,
-.card-2,
-.card-3 {
-    border: 10px solid #00BCD4;
+.titulo h2 {
+    text-align: center;
+    color: #000000;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
 }
 
 /* meel */
 /*Formulario*/
-.container {
+.container{
     display: flex;
     min-height: 600px;
-    width: 600px;
+    width: 500px;
     margin: 0 auto;
     padding: 50px 0;
 }
-
 .formulario {
     border: 1px solid #bebebe;
     border-radius: 2px;
     margin: 0 10px;
     padding: 10px;
-    width: 50%;
-    height: 520px;
+    width: 100%;
+    height: 500px;
     float: left;
 }
 
-.formulario h2 {
+.formulario h2{
     color: #7B1FA2;
     font-size: 20px;
 }
-
-.formulario form input {
-    width: 100%;
+.formulario form input{
+    width: 90%;
     border: 1px solid#000000;
     border-radius: 7px;
     padding: 7px;
     margin: 3px 0;
 }
 
-.formulario label {
+.formulario form plan{
+    width: 70%;
+    border: 1px solid#000000;
+    border-radius: 7px;
+    padding: 7px;
+    margin: 3px 0;
+}
+
+.formulario label{
     font-size: 13px;
-    width: 100%;
+    width: 70%;
     border-radius: 7px;
     padding: 5px;
     margin: 3px 0;
 }
-
-.form-plan {
+.form-plan{
     width: 100%;
-    border: 1px solid#000000;
+    border: 1px solid#fdfdfd;
     border-radius: 7px;
     padding: 10px;
     margin: 5px 0;
 }
-
-.formulario form button {
+.formulario form button{
     font-size: 14px;
     background-color: #7B1FA2;
     color: #fff;
@@ -245,17 +300,15 @@ main .card-1,
     padding: 5px 80px;
     border-radius: 30px;
 }
-
-.formulario form button:hover {
+.formulario form button:hover{
     background-color: #7B1FA2;
     transition: 0.5s;
     cursor: pointer;
 }
-
 .img-vertical {
     width: 65%;
-    height: 700px;
-    background-image: url(imagens/Velocity-elemento1.png);
+    height: 500px;
+    background-image: url(../imagens/Velocity-elemento1.png);
     background-size: cover;
     background-position: center;
     border-radius: 30px;
