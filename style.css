@@ -1,28 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;700&family=Roboto:wght@400;700&display=swap');
-
 body {
     margin: 0;
     padding: 0;
     font-family: 'Raleway', sans-serif;
     font-family: 'Roboto', sans-serif;
 }
-
 .menu img {
     display: flex;
     justify-content: start;
 }
-
 header .logo {
     text-align: center;
 }
-
 header .menu {
     background-color: #7B1FA2;
     display: flex;
     justify-content: end;
     justify-content: space-around;
 }
-
 header .menu ul {
     margin: 0 55px;
     list-style: none;
@@ -64,7 +59,6 @@ header .menu ul li {
     display: inline-block;
     padding: 10px 15px;
 }
-
 header .menu ul li a {
     text-decoration: none;
     color: #FDFDFD;
@@ -74,6 +68,8 @@ header .menu ul li a:hover {
     color: #bdbdbd;
 }
 
+/* mateus */
+
 .banner {
     width: 100%;
     height: 600px;
@@ -81,6 +77,8 @@ header .menu ul li a:hover {
     background-repeat: no-repeat;
     background-position: center center;
 }
+
+/* meel */
 
 main .card-img1{ 
     width: 300px;
@@ -109,9 +107,7 @@ main .card-1, .card-2, .card-3 {
     border: 10px solid #00BCD4;
 }
 /* meel */
-
 /*Formulario*/
-
 .container{
     display: flex;
     min-height: 600px;
@@ -119,7 +115,6 @@ main .card-1, .card-2, .card-3 {
     margin: 0 auto;
     padding: 50px 0;
 }
-
 .formulario {
     border: 1px solid #bebebe;
     border-radius: 2px;
@@ -134,7 +129,6 @@ main .card-1, .card-2, .card-3 {
     color: #7B1FA2;
     font-size: 20px;
 }
-
 .formulario form input{
     width: 100%;
     border: 1px solid#000000;
@@ -142,7 +136,6 @@ main .card-1, .card-2, .card-3 {
     padding: 7px;
     margin: 3px 0;
 }
-
 .formulario label{
     font-size: 13px;
     width: 100%;
@@ -150,7 +143,6 @@ main .card-1, .card-2, .card-3 {
     padding: 5px;
     margin: 3px 0;
 }
-
 .form-plan{
     width: 100%;
     border: 1px solid#000000;
@@ -158,7 +150,6 @@ main .card-1, .card-2, .card-3 {
     padding: 10px;
     margin: 5px 0;
 }
-
 .formulario form button{
     font-size: 14px;
     background-color: #7B1FA2;
@@ -167,17 +158,15 @@ main .card-1, .card-2, .card-3 {
     padding: 5px 80px;
     border-radius: 30px;
 }
-
 .formulario form button:hover{
     background-color: #7B1FA2;
     transition: 0.5s;
     cursor: pointer;
 }
-
 .img-vertical {
     width: 65%;
     height: 700px;
-    background-image: url(../imagens/Velocity-elemento1.png);
+    background-image: url(imagens/Velocity-elemento1.png);
     background-size: cover;
     background-position: center;
     border-radius: 30px;
@@ -295,8 +284,10 @@ footer hr {
     border: 1px solid #000000;
 }
 
+
 footer h4 {
     height: 20px;
     font-size: 16px;
     text-align: center;
 }
+  
