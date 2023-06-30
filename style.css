@@ -308,7 +308,7 @@ section.planos .container {
 .img-vertical {
     width: 65%;
     height: 500px;
-    background-image: url(../imagens/Velocity-elemento1.png);
+    background-image: url(imagens/Velocity-elemento1.png);
     background-size: cover;
     background-position: center;
     border-radius: 30px;
@@ -421,11 +421,9 @@ footer .logo-footer ul li a {
     width: 48px;
 }
 
-
 footer hr {
     border: 1px solid #000000;
 }
-
 
 footer h4 {
     height: 20px;
