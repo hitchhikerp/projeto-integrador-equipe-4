@@ -296,33 +296,43 @@ section.planos .container {
 main.status {
     display: flex;
     justify-content: space-around;
-    margin: 150px 88px;
+    margin: 110px 55px;
 }
 
 main .texto-solicita h1.titulo-status {
-    color: #7B1FA2;
-    font-size: 38px;
+    color: #9c27b0;
+    font-size: 44px;
 }
 
 main .texto-solicita .texto-status {
-    font-size: 18px;
+    font-size: 21px;
     width: 320px;
+}
+
+main .texto-solicita .texto-status p {
+    padding: 5px;
 }
 
 .caixa-status {
     padding: 22px;
-    margin: 22px;
+    margin: 82px 22px;
     border: 1px solid #bdbdbd;
     border-radius: 20px;
-    width: 308px;
+    width: 380px;
+    box-shadow: 0px 0px 8px 0px rgba(189,189,189,1);
+}
+
+main form h4.titulo-caixa {
+    margin: 2px;
+    margin-top: 18px;
 }
 
 .caixa-status input {
-    width: 244px;
-    height: 24px;
+    width: 322px;
+    height: 30px;
     margin: 6px 22px;
-    border-radius: 5px;
-    border: 1px solid #757757;
+    border-radius: 6px;
+    border: 1.4px solid #757757;
 }
 
 main section input {
@@ -336,13 +346,18 @@ main form {
 }
 
 main form button {
-    width: 228px;
-    height: 34px;
+    width: 326px;
+    height: 32px;
     color: #FDFDFD;
-    background-color: #7B1FA2;
-    border: 1px solid #7B1FA2;
-    border-radius: 5px;
+    background-color: #9c27b0;
+    border: 1px solid #9c27b0;
+    border-radius: 6px;
     margin: 10px 28px;
+    font-weight: 700;
+}
+
+main form button:hover {
+    background-color: #7B1FA2;
 }
 
 footer {
