@@ -1,4 +1,3 @@
-// Lógica do carrossel
 var currentImage = 0;
 var images = document.getElementsByClassName('carousel-image');
 var captions = document.getElementsByClassName('carousel-caption')[0];
@@ -21,19 +20,16 @@ function updateNavigationButtons() {
 }
 
 function showImage(n) {
-  // Esconde todas as imagens
+
   for (var i = 0; i < images.length; i++) {
     images[i].classList.remove('active');
   }
-  
-  // Mostra a imagem atual
+
   images[n].classList.add('active');
   currentImage = n;
-  
-  // Atualiza os botões de navegação
+
   updateNavigationButtons();
   
-  // Atualiza o texto da legenda
   var captionText = images[n].querySelector('.carousel-caption').textContent;
   captions.textContent = captionText;
 }
@@ -48,13 +44,10 @@ function prevImage() {
   showImage(currentImage);
 }
 
-// Cria os botões de navegação
 createNavigationButtons();
 
-// Exibe a primeira imagem
 showImage(currentImage);
 
-// Reprodução automática
 setInterval(function() {
   nextImage();
 }, 3000);

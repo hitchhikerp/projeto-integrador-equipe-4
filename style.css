@@ -74,8 +74,6 @@ header .menu ul li a:hover {
     color: #bdbdbd;
 }
 
-/* mateus */
-
 .banner {
     width: 100%;
     height: 600px;
@@ -84,8 +82,6 @@ header .menu ul li a:hover {
     background-position: center center;
 }
 
-/* carousel inico */
-
 .carousel {
     width: 500px;
     height: 300px;
@@ -93,7 +89,6 @@ header .menu ul li a:hover {
     overflow: hidden;
     margin: 0 auto;
     background-color: transparent;
-    /* Adicionado para tornar o fundo transparente */
 }
 
 .carousel-image {
@@ -110,7 +105,6 @@ header .menu ul li a:hover {
     width: 100%;
     height: 100%;
     object-fit: contain;
-    /* Adicionado para ajustar o tamanho da imagem */
 }
 
 .carousel-caption {
@@ -150,16 +144,11 @@ header .menu ul li a:hover {
     background-color: #333;
 }
 
-/* carousel fim */
-
-/* meel */
 section.planos .container {
     min-height: 500px;
     width: 700px;
     max-width: 100%;
-    /* largura */
     margin: 0 auto;
-    /* espaçamento automatico para centralizar o container */
     padding: 0 15px;
 }
 
@@ -173,13 +162,9 @@ section.planos .container {
 
 .lista-planos {
     display: flex;
-    /* ativando flexbox */
     justify-content: space-between;
-    /* espaçamento igual ao redor dos elementos (horizontal) */
     align-items: flex-start;
-    /* todos os elementos alinhados ao topo */
     flex-wrap: wrap;
-    /* permite que aconteça a quebra de linha */
 }
 
 
@@ -188,9 +173,9 @@ section.planos .container {
     align-items: center;
     display: flex;
     justify-content: space-between;
-    width: 150px;/*largura do article*/
-    text-align: center; /*centralizando tudo no article*/
-    margin-bottom: 40px; /*espçamento inferior*/
+    width: 150px;
+    text-align: center;
+    margin-bottom: 40px;
 }
 
 .lista-planos article h3{
@@ -198,27 +183,22 @@ section.planos .container {
 }
 
 .lista-planos article a{
-    background-color: #7B1FA2; /*cor de fundo*/
-    color: #fff; /*cor do texto*/ 
-    font-size: 15px; /*tamanho da letra*/
-    font-weight: bold; /*grossura da letra*/
-    padding: 5px 30px; /*espaçamento interno do botão*/
-    text-decoration: none; /*tirar sublinhado do link*/
+    background-color: #7B1FA2; 
+    color: #fff; 
+    font-size: 15px; 
+    font-weight: bold; 
+    padding: 5px 30px; 
+    text-decoration: none; 
 }
 
 
 
 .lista-planos article .imagem-planos {
     width: 150px;
-    /* imagem vai ocupar 100% de largura do article */
     height: 150px;
-    /* altura do thumb */
     background-size: cover;
-    /* imagem cobre todo o elemento */
     background-repeat: no-repeat;
-    /* imagem não se repete */
     background-position: center;
-    /* imagem centralizada */
 }
 
 
@@ -239,8 +219,6 @@ section.planos .container {
     font-size: 30px;
 }
 
-/* meel */
-/*Formulario*/
 .container{
     display: flex;
     min-height: 600px;
