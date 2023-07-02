@@ -82,53 +82,67 @@ header .menu ul li a:hover {
     background-position: center center;
 }
 
-.carousel {
-    width: 500px;
-    height: 300px;
+/* carrossel inico */
+
+.carrossel {
+    width: 1400px;
+    height: 600px;
     position: relative;
     overflow: hidden;
-    margin: 0 auto;
-    background-color: transparent;
-}
+    margin: 50 auto;
+    background-color: transparent; /* Adicionado para tornar o fundo transparente */
+  }
 
-.carousel-image {
+  .carrossel-image {
     width: 100%;
     height: 100%;
     display: none;
-}
+  }
 
-.carousel-image.active {
+  .carrossel-image.active {
     display: block;
-}
+  }
 
-.carousel-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
+  .carrossel-image img {
+    width: 700px;
+    height: 500px;
+    object-fit: contain; /* Adicionado para ajustar o tamanho da imagem */
+  }
 
-.carousel-caption {
+  .carrossel-caption { /*arrumar o texto*/
     position: absolute;
-    top: 50%;
-    left: 400px;
+    top: 40%;
+    left: 900px;
     transform: translateY(-50%);
-    padding: 10px;
-    color: #a5f80b;
-    font-size: 18px;
+    padding: 40px;
+    font-size: 40px;
     font-weight: bold;
     background-color: rgba(0, 0, 0, 0);
-    width: 100px;
+   /* width: 1080px; */
+   color: #9c27b0;
+  }
+
+/* cor do texto */
+.carrossel-caption h1  {
+    font-size: 40px;
+    color: #9c27b0;
 }
 
-.carousel-navigation {
+.carrossel-caption p {
+    font-size: 20px;
+    color: #757575;
+}
+
+
+  .carrossel-navigation {
     position: absolute;
     bottom: 10px;
     left: 0;
     right: 0;
     text-align: center;
-}
+  }
 
-.carousel-navigation button {
+  .carrossel-navigation button {
     display: inline-block;
     width: 10px;
     height: 10px;
@@ -138,11 +152,13 @@ header .menu ul li a:hover {
     border-radius: 50%;
     padding: 0;
     cursor: pointer;
-}
+  }
 
-.carousel-navigation button.active {
-    background-color: #333;
-}
+  .carrossel-navigation button.active {
+    background-color: #9c27b0;
+  }
+
+  /* carrossel fim */
 
 section.planos .container {
     min-height: 500px;
