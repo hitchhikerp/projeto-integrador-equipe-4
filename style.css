@@ -144,7 +144,7 @@ header .menu ul li a:hover {
     background-color: #333;
 }
 
-section.planos .container {
+section.planos .lista-planos {
     min-height: 500px;
     width: 700px;
     max-width: 100%;
@@ -152,12 +152,13 @@ section.planos .container {
     padding: 0 15px;
 }
 
-.lista-planos article.card{
-    border-radius: 2px #7B1FA2;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;    
+section h2.titulo-cards {
+    color: #9c27b0;
+}
 
+section article h3.titulo-card-individual {
+    color: #9c27b0;
+    font-size: 20px;
 }
 
 .lista-planos {
@@ -167,31 +168,28 @@ section.planos .container {
     flex-wrap: wrap;
 }
 
-
-.lista-planos article{
-    border:1px solid #000000;
+.lista-planos article.card {
+    border:1px solid #757757;
+    border-radius: 18px;
     align-items: center;
     display: flex;
-    justify-content: space-between;
-    width: 150px;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 200px;
     text-align: center;
     margin-bottom: 40px;
-}
-
-.lista-planos article h3{
-    font-size: 20px;
+    box-shadow: 0px 0px 8px 0px rgba(189,189,189,1);
 }
 
 .lista-planos article a{
     background-color: #7B1FA2; 
     color: #fff; 
     font-size: 15px; 
-    font-weight: bold; 
+    font-weight: 700; 
     padding: 5px 30px; 
     text-decoration: none; 
+    border-radius: 18px;
 }
-
-
 
 .lista-planos article .imagem-planos {
     width: 150px;
@@ -219,8 +217,7 @@ section.planos .container {
     font-size: 30px;
 }
 
-.container{
-    display: flex;
+.lista-planos {
     min-height: 600px;
     width: 500px;
     margin: 0 auto;
@@ -231,9 +228,9 @@ section.planos .container {
     border-radius: 2px;
     margin: 0 10px;
     padding: 10px;
-    width: 100%;
     height: 500px;
-    float: left;
+    width: 400px;
+    border-radius: 15px;
 }
 
 .formulario h2{
@@ -241,7 +238,6 @@ section.planos .container {
     font-size: 20px;
 }
 .formulario form input{
-    width: 90%;
     border: 1px solid#000000;
     border-radius: 7px;
     padding: 7px;
@@ -249,7 +245,6 @@ section.planos .container {
 }
 
 .formulario form plan{
-    width: 70%;
     border: 1px solid#000000;
     border-radius: 7px;
     padding: 7px;
@@ -258,13 +253,16 @@ section.planos .container {
 
 .formulario label{
     font-size: 13px;
-    width: 70%;
     border-radius: 7px;
     padding: 5px;
     margin: 3px 0;
 }
-.form-plan{
-    width: 100%;
+
+/* section.contato {
+    
+} */
+
+.form-plan{     
     border: 1px solid#fdfdfd;
     border-radius: 7px;
     padding: 10px;
@@ -290,7 +288,6 @@ section.planos .container {
     background-size: cover;
     background-position: center;
     border-radius: 30px;
-    float: right;
 }
 
 main.status {
