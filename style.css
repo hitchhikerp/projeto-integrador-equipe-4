@@ -461,7 +461,6 @@ footer h4 {
     height: 20px;
     font-size: 16px;
     text-align: center;
-<<<<<<< HEAD
     color: #fff;
 }
 
@@ -485,7 +484,7 @@ footer h4 {
   .status-link {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #7B1FA2;
+    background-color: #9c27b0;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -493,9 +492,7 @@ footer h4 {
 
   }
   .status-link:hover {
-    background-color: white;
+    background-color: #7B1FA2;
+    color: #FDFDFD;
   }
-=======
-    color: #FFFFFF;
-}
->>>>>>> a43871f064e04dd11530a53a24244917b6b1dcec
+   
