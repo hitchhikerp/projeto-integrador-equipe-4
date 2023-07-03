@@ -72,6 +72,7 @@ header .menu ul li a {
 
 header .menu ul li a:hover {
     color: #bdbdbd;
+    transition: 0.3s;
 }
 
 .banner {
@@ -82,35 +83,32 @@ header .menu ul li a:hover {
     background-position: center center;
 }
 
-
-/* carrossel inico */
-
 .carrossel {
     width: 100%;
     height: 600px;
     position: relative;
     overflow: hidden;
     margin: 50 auto;
-    background-color: transparent; /* Adicionado para tornar o fundo transparente */
-  }
+    background-color: transparent;
+}
 
-  .carrossel-image {
+.carrossel-image {
     width: 100%;
     height: 100%;
     display: none;
-  }
+}
 
-  .carrossel-image.active {
+.carrossel-image.active {
     display: block;
-  }
+}
 
-  .carrossel-image img {
+.carrossel-image img {
     width: 700px;
     height: 500px;
-    object-fit: contain; /* Adicionado para ajustar o tamanho da imagem */
-  }
+    object-fit: contain;
+}
 
-  .carrossel-caption { /*arrumar o texto*/
+.carrossel-caption {
     position: absolute;
     top: 40%;
     left: 900px;
@@ -119,12 +117,10 @@ header .menu ul li a:hover {
     font-size: 40px;
     font-weight: bold;
     background-color: rgba(0, 0, 0, 0);
-   /* width: 1080px; */
-   color: #9c27b0;
-  }
+    color: #9c27b0;
+}
 
-/* cor do texto */
-.carrossel-caption h1  {
+.carrossel-caption h1 {
     font-size: 40px;
     color: #9c27b0;
 }
@@ -135,15 +131,15 @@ header .menu ul li a:hover {
 }
 
 
-  .carrossel-navigation {
+.carrossel-navigation {
     position: absolute;
     bottom: 10px;
     left: 0;
     right: 0;
     text-align: center;
-  }
+}
 
-  .carrossel-navigation button {
+.carrossel-navigation button {
     display: inline-block;
     width: 10px;
     height: 10px;
@@ -153,13 +149,11 @@ header .menu ul li a:hover {
     border-radius: 50%;
     padding: 0;
     cursor: pointer;
-  }
+}
 
-  .carrossel-navigation button.active {
+.carrossel-navigation button.active {
     background-color: #9c27b0;
-  }
-
-  /* carrossel fim */
+}
 
 section.planos .lista-planos {
     width: 882px;
@@ -182,30 +176,41 @@ section article h3.titulo-card-individual {
 }
 
 .lista-planos article.card {
-    border:1px solid #bdbdbd;
+    border: 1px solid #bdbdbd;
     border-radius: 18px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     width: 200px;
-    text-align: center;
-    padding: 22px 6px;
-    box-shadow: 0px 0px 8px 0px rgba(189,189,189,1);
+    padding: 22px 16px;
+    box-shadow: 0px 0px 8px 0px rgba(189, 189, 189, 1);
 }
 
-.lista-planos article button {
-    background-color: #9c27b0; 
+.lista-planos article.card p {
+    text-align: center;
+}
+
+.lista-planos article h3.price {
+    color: #9c27b0;
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.lista-planos article a {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: none;
+    background-color: #9c27b0;
     border: 1px solid #9c27b0;
     border-radius: 18px;
-    height: 32px;
-    width: 164px;
+    padding: 6px 30px;
 }
 
-.lista-planos article button a {
-    color: #fff; 
-    font-size: 15px; 
-    font-weight: 700; 
-    text-decoration: none; 
+.lista-planos article a:hover {
+    background-color: #7B1FA2;
+    border-color: #7B1FA2;
+    transition: 0.3s;
 }
 
 .lista-planos article .imagem-planos {
@@ -215,7 +220,6 @@ section article h3.titulo-card-individual {
     background-repeat: no-repeat;
     background-position: center;
 }
-
 
 .titulo {
     display: flex;
@@ -240,6 +244,7 @@ section article h3.titulo-card-individual {
     margin: 0 auto;
     padding: 50px 0;
 }
+
 .formulario {
     border: 1px solid #bebebe;
     border-radius: 2px;
@@ -250,42 +255,40 @@ section article h3.titulo-card-individual {
     border-radius: 15px;
 }
 
-.formulario h2{
+.formulario h2 {
     color: #7B1FA2;
     font-size: 20px;
 }
-.formulario form input{
+
+.formulario form input {
+    border: 1px solid #000000;
+    border-radius: 7px;
+    padding: 7px;
+    margin: 3px 0;
+}
+
+.formulario form plan {
     border: 1px solid#000000;
     border-radius: 7px;
     padding: 7px;
     margin: 3px 0;
 }
 
-.formulario form plan{
-    border: 1px solid#000000;
-    border-radius: 7px;
-    padding: 7px;
-    margin: 3px 0;
-}
-
-.formulario label{
+.formulario label {
     font-size: 13px;
     border-radius: 7px;
     padding: 5px;
     margin: 3px 0;
 }
 
-/* section.contato {
-    
-} */
-
-.form-plan{     
+.form-plan {
     border: 1px solid#fdfdfd;
     border-radius: 7px;
     padding: 10px;
     margin: 5px 0;
 }
-.formulario form button{
+
+.formulario form button {
     font-size: 14px;
     background-color: #7B1FA2;
     color: #fff;
@@ -293,11 +296,13 @@ section article h3.titulo-card-individual {
     padding: 5px 80px;
     border-radius: 30px;
 }
-.formulario form button:hover{
+
+.formulario form button:hover {
     background-color: #7B1FA2;
     transition: 0.5s;
     cursor: pointer;
 }
+
 .img-vertical {
     width: 65%;
     height: 500px;
@@ -333,7 +338,7 @@ main .texto-solicita .texto-status p {
     border: 1px solid #bdbdbd;
     border-radius: 20px;
     width: 380px;
-    box-shadow: 0px 0px 8px 0px rgba(189,189,189,1);
+    box-shadow: 0px 0px 8px 0px rgba(189, 189, 189, 1);
 }
 
 main form h4.titulo-caixa {
@@ -374,27 +379,22 @@ main form button:hover {
     background-color: #7B1FA2;
 }
 
-.status {
+.solicitações {
     width: 100%;
     height: 600px;
-    background-image: linear-gradient(to bottom,   #fff, #e1bee7);
+    background-image: linear-gradient(to bottom, #fff, #e1bee7);
     background-repeat: no-repeat;
     background-position: center center;
 }
 
- .status img {
-    
+.solicitações img {
     width: 360px;
     height: 320px;
+    display: flexbox;
 }
 
-
-
-
-
-
 footer {
-    background-color: #9c27b0;
+    background-color: #7B1FA2;
     height: 260px;
 }
 
@@ -424,7 +424,7 @@ footer span a {
     margin: 10;
     padding: 10;
     font-size: 22px;
-    color: #fff;
+    color: #FFFFFF;
     font-weight: 700;
     text-decoration: none;
 }
@@ -432,7 +432,7 @@ footer span a {
 footer .logo-vertical p {
     text-align: justify;
     width: 400px;
-    color: #fff;
+    color: #FFFFFF;
 
 }
 
@@ -445,18 +445,23 @@ footer .logo-footer ul li a {
     text-decoration: none;
     font-weight: 700;
     width: 48px;
-    color: #fff;
+    color: #FFFFFF;
+}
 
+footer .logo-footer ul li a:hover {
+    color: #bdbdbd;
+    transition: 0.3s;
 }
 
 footer hr {
-    border: 1px solid #000000;
+    border: 1px solid #FFFFFF;
 }
 
 footer h4 {
     height: 20px;
     font-size: 16px;
     text-align: center;
+<<<<<<< HEAD
     color: #fff;
 }
 
@@ -490,3 +495,7 @@ footer h4 {
   .status-link:hover {
     background-color: white;
   }
+=======
+    color: #FFFFFF;
+}
+>>>>>>> a43871f064e04dd11530a53a24244917b6b1dcec
