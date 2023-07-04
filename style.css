@@ -383,7 +383,7 @@ main form button:hover {
 }
 
 .solicitações {
-    display: flexbox;
+    display: flex;
     width: 100%;
     height: 600px;
     background-image: linear-gradient(to bottom, #fff, #e1bee7);
@@ -393,18 +393,17 @@ main form button:hover {
 }
 
 .solicitações img {
-    width: 360px;
+    width: 460px;
     height: 320px;
-    display: flexbox;
+    display: flex;
 }
 
 .container {
-    
     max-width: 700px;
     margin: 0 auto;
     padding: 20px;
     text-align: center;
-
+    justify-content: left ;
   }
 
 /*ABA DE PLANOS*/
