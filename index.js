@@ -57,4 +57,4 @@ showImage(currentImage);
 // Reprodução automática
 setInterval(function() {
   nextImage();
-}, 10000);
+}, 30000);
