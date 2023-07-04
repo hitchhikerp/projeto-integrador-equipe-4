@@ -400,6 +400,42 @@ main form button:hover {
     display: flexbox;
 }
 
+/*ABA DE PLANOS*/
+.container-planos{
+    display: flex;
+    min-height: 100%;
+    width: 90%;
+    height: 600px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.container-planos .formulario label{
+    font-size: 15px;
+    width: 70%;
+    border-radius: 7px;
+    padding: 5px;
+    margin: 3px 0;
+}
+
+.container-planos .formulario{
+    margin: 0 auto;
+    border: 1px solid #bebebe;
+    border-radius: 15px;
+    margin: 0 10px;
+    padding: 10px;
+    width: 1000px;
+    height: 500px;
+}
+
+
+.texto-plano h2{
+    color: #7B1FA2;
+    font-size: 50px;
+}
+
+/*____________________________________*/
+
 footer {
     background-color: #7B1FA2;
     height: 260px;
