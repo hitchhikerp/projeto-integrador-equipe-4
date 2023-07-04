@@ -34,8 +34,8 @@ function showImage(n) {
   updateNavigationButtons();
   
   // Atualiza o texto da legenda
-  var captionText = images[n].querySelector('.carrossel-caption').textContent;
-  captions.textContent = captionText;
+  var captionText = images[n].querySelector('.carrossel-caption').innerHTML;
+  captions.innerHTML = captionText;
 }
 
 function nextImage() {
