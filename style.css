@@ -247,64 +247,58 @@ section article h3.titulo-card-individual {
 
 .container-form{
     display: flex;
-    min-height: 600px;
-    width: 500px;
-    margin: 0 auto;
-    padding: 50px 0;
+    padding: 50px;
 }
+
 .formulario {
-    border: 1px solid #bebebe;
+    border: 1px solid #bdbdbd;
     border-radius: 15px;
-    margin: 0 10px;
-    padding: 10px;
-    width: 100%;
+    margin: 10px;
+    padding: 28px;
+    width: 500px;
     height: 500px;
+    box-shadow: 0px 0px 8px 0px rgba(189, 189, 189, 1);
 }
 
 .formulario h2{
     color: #7B1FA2;
     font-size: 20px;
 }
-.formulario form input{
-    width: 90%;
-    border: 1px solid #000000;
-    border-radius: 7px;
-    padding: 7px;
-    margin: 3px 0;
-}
-
-.formulario form plan{
-    width: 70%;
-    width: 5px;
-    height: 3px;
-    border: 1px solid#000000;
-    border-radius: 7px;
-    padding: 7px;
-    margin: 3px 0;
-}
 
 .formulario label{
     font-size: 13px;
     width: 70%;
-    border-radius: 7px;
-    padding: 5px;
-    margin: 3px 0;
+    border-radius: 8px;
+    padding: 6px;
+    margin: 4px;
 }
+
+.formulario form input{
+    width: 276px;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    padding: 6px;
+    margin: 8px;
+}
+
 .form-plan{
-    width: 100%;
-    border: 1px solid#000000;
-    border-radius: 7px;
-    padding: 10px;
-    margin: 5px 0;
+    width: 288px;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    padding: 6px;
+    margin: 8px;
 }
+
 .formulario form button{
     font-size: 14px;
-    background-color: #7B1FA2;
+    font-weight: 700;
+    background-color: #9c27b0;
     color: #fff;
-    border: 1px solid #7B1FA2;
-    padding: 5px 80px;
-    border-radius: 30px;
+    border: 1px solid #9c27b0;
+    padding: 8px 118px;
+    border-radius: 14px;
 }
+
 .formulario form button:hover{
     background-color: #7B1FA2;
     transition: 0.5s;
