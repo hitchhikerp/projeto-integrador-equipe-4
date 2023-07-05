@@ -400,21 +400,32 @@ main form button:hover {
 }
 
 .container {
-    max-width: 700px;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: center;
-    justify-content: left center;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: center;
   }
 
   .container h2 { 
     color: #7B1FA2;
     font-size: 47px;
+    line-height: 10px;
   }
 
   .container p { 
-    font-size: 22px;
+    font-size:22px;
+    text-align: left;
+
   }
+
+  .container a { 
+    Width: 288px;
+    Height: 30px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 19px;
+  }
+
 
 /*ABA DE PLANOS*/
 .container-planos{
