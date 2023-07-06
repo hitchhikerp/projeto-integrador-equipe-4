@@ -3,7 +3,6 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Raleway', sans-serif;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -245,7 +244,7 @@ section article h3.titulo-card-individual {
     padding: 50px 0;
 }
 
-.container-form{
+.container-form {
     display: flex;
     justify-content: space-around;
     padding: 50px;
@@ -261,12 +260,12 @@ section article h3.titulo-card-individual {
     box-shadow: 0px 0px 8px 0px rgba(189, 189, 189, 1);
 }
 
-.formulario h2{
+.formulario h2 {
     color: #7B1FA2;
     font-size: 20px;
 }
 
-.formulario label{
+.formulario label {
     font-size: 12px;
     font-weight: 700;
     border-radius: 8px;
@@ -274,7 +273,7 @@ section article h3.titulo-card-individual {
     margin: 4px;
 }
 
-.formulario form input{
+.formulario form input {
     width: 276px;
     border: 1px solid #757575;
     border-radius: 8px;
@@ -282,7 +281,7 @@ section article h3.titulo-card-individual {
     margin: 8px;
 }
 
-.form-plan{
+.form-plan {
     width: 288px;
     border: 1px solid #757575;
     border-radius: 8px;
@@ -290,7 +289,7 @@ section article h3.titulo-card-individual {
     margin: 8px;
 }
 
-.formulario form button{
+.formulario form button {
     font-size: 14px;
     font-weight: 700;
     background-color: #9c27b0;
@@ -300,7 +299,7 @@ section article h3.titulo-card-individual {
     border-radius: 14px;
 }
 
-.formulario form button:hover{
+.formulario form button:hover {
     background-color: #7B1FA2;
     transition: 0.5s;
     cursor: pointer;
@@ -389,7 +388,6 @@ main form button:hover {
     background-image: linear-gradient(to bottom, #fff, #e1bee7);
     background-repeat: no-repeat;
     background-position: center center;
-
 }
 
 .solicitações img {
@@ -403,11 +401,10 @@ main form button:hover {
     margin: 0 auto;
     padding: 20px;
     text-align: center;
-    justify-content: left ;
-  }
+    justify-content: left;
+}
 
-/*ABA DE PLANOS*/
-.container-planos{
+.container-planos {
     display: flex;
     min-height: 100%;
     width: 90%;
@@ -416,7 +413,7 @@ main form button:hover {
     padding: 50px 0;
 }
 
-.container-planos .formulario label{
+.container-planos .formulario label {
     font-size: 15px;
     width: 70%;
     border-radius: 7px;
@@ -424,7 +421,7 @@ main form button:hover {
     margin: 3px 0;
 }
 
-.container-planos .formulario{
+.container-planos .formulario {
     margin: 0 auto;
     border: 1px solid #bebebe;
     border-radius: 15px;
@@ -434,13 +431,10 @@ main form button:hover {
     height: 500px;
 }
 
-
-.texto-plano h2{
+.texto-plano h2 {
     color: #7B1FA2;
     font-size: 50px;
 }
-
-/*____________________________________*/
 
 footer {
     background-color: #7B1FA2;
@@ -513,18 +507,7 @@ footer h4 {
     color: #fff;
 }
 
-
-  h1 {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-
-  p {
-    font-size: 16px;
-    margin-bottom: 20px;
-  }
-
-  .status-link {
+.status-link {
     display: inline-block;
     padding: 10px 20px;
     background-color: #9c27b0;
@@ -533,9 +516,9 @@ footer h4 {
     border-radius: 5px;
     transition: background-color 0.3s ease;
 
-  }
-  .status-link:hover {
+}
+
+.status-link:hover {
     background-color: #7B1FA2;
     color: #FDFDFD;
-  }
-   
+}
