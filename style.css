@@ -155,7 +155,11 @@ header .menu ul li a:hover {
 }
 
 section.planos .lista-planos {
-    width: 882px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 section h2.titulo-cards {
@@ -165,13 +169,6 @@ section h2.titulo-cards {
 section article h3.titulo-card-individual {
     color: #9c27b0;
     font-size: 20px;
-}
-
-.lista-planos {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
 }
 
 .lista-planos article.card {
@@ -187,6 +184,7 @@ section article h3.titulo-card-individual {
 
 .lista-planos article.card:hover {
     border: 1.4px solid #7B1FA2;
+    box-shadow: 0px 0px 8px 0px #7B1FA2;
     transition: 0.1s;
 }
 
@@ -251,7 +249,7 @@ section article h3.titulo-card-individual {
 
 .container-form {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding: 50px;
 }
 
@@ -267,6 +265,7 @@ section article h3.titulo-card-individual {
 
 .formulario:hover {
     border: 1.4px solid #7B1FA2;
+    box-shadow: 0px 0px 8px 0px #7B1FA2;
     transition: 0.1s;
 }
 
@@ -306,7 +305,7 @@ section article h3.titulo-card-individual {
     color: #fff;
     border: 1px solid #9c27b0;
     padding: 8px 118px;
-    border-radius: 14px;
+    border-radius: 6px;
 }
 
 .formulario form button:hover {
@@ -355,6 +354,7 @@ main .texto-solicita .texto-status p {
 
 .caixa-status:hover {
     border: 1.4px solid #7B1FA2;
+    box-shadow: 0px 0px 8px 0px #7B1FA2;
     transition: 0.1s;
 }
 
@@ -406,15 +406,13 @@ main form button:hover {
 }
 
 .solicitações img {
-    margin: 100px;
+    margin: 90px 40px;
     width: 560px;
     height: 420px;
-    display: flex;
 }
 
 .container {
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
     align-content: center;
 }
@@ -422,7 +420,6 @@ main form button:hover {
 .container h2 {
     color: #7B1FA2;
     font-size: 47px;
-    line-height: 10px;
 }
 
 .container p {
@@ -432,11 +429,9 @@ main form button:hover {
 }
 
 .container a {
-    Width: 288px;
-    Height: 30px;
-    border-radius: 10px;
+    padding: 12px 100px;
+    border-radius: 6px;
     text-align: center;
-    justify-content: left;
 }
 
 .container-planos {
@@ -456,16 +451,6 @@ main form button:hover {
     margin: 3px 0;
 }
 
-.container-planos .formulario {
-    margin: 0 auto;
-    border: 1px solid #bebebe;
-    border-radius: 15px;
-    margin: 0 10px;
-    padding: 10px;
-    width: 1000px;
-    height: 500px;
-}
-
 .texto-plano h2 {
     color: #7B1FA2;
     font-size: 50px;
@@ -478,13 +463,13 @@ footer {
 
 .logo-footer {
     display: flex;
-    justify-content: flex-start;
     align-items: center;
     padding: 30px 0 0 0;
 }
 
 .logo-vertical {
     display: flex;
+    align-items: center;
     margin: 20px 108px;
 }
 
