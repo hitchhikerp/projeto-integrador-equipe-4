@@ -437,6 +437,7 @@ main form button:hover {
     border-radius: 10px;
     text-align: center;
     justify-content: left;
+    font-size: 25px;
 }
 
 .container-planos {
