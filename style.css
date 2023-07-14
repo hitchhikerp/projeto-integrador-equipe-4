@@ -154,8 +154,14 @@ header .menu ul li a:hover {
     background-color: #9c27b0;
 }
 
+/*==========CARDS DE PLANOS==========*/
+
 section.planos .lista-planos {
-    width: 882px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 section h2.titulo-cards {
@@ -165,13 +171,6 @@ section h2.titulo-cards {
 section article h3.titulo-card-individual {
     color: #9c27b0;
     font-size: 20px;
-}
-
-.lista-planos {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
 }
 
 .lista-planos article.card {
@@ -187,6 +186,7 @@ section article h3.titulo-card-individual {
 
 .lista-planos article.card:hover {
     border: 1.4px solid #7B1FA2;
+    box-shadow: 0px 0px 8px 0px #7B1FA2;
     transition: 0.1s;
 }
 
@@ -248,10 +248,12 @@ section article h3.titulo-card-individual {
     margin: 0 auto;
     padding: 50px 0;
 }
+/*==============================*/
 
+/*==========AREA DO FORMULARIO==========*/
 .container-form {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding: 50px;
 }
 
@@ -267,6 +269,7 @@ section article h3.titulo-card-individual {
 
 .formulario:hover {
     border: 1.4px solid #7B1FA2;
+    box-shadow: 0px 0px 8px 0px #7B1FA2;
     transition: 0.1s;
 }
 
@@ -306,7 +309,7 @@ section article h3.titulo-card-individual {
     color: #fff;
     border: 1px solid #9c27b0;
     padding: 8px 118px;
-    border-radius: 14px;
+    border-radius: 6px;
 }
 
 .formulario form button:hover {
@@ -323,7 +326,9 @@ section article h3.titulo-card-individual {
     background-position: center;
     border-radius: 30px;
 }
+/*==============================*/
 
+/*==========AREA DE STATUS DE SOLICITAÇÃO==========*/
 main.status {
     display: flex;
     justify-content: space-around;
@@ -355,6 +360,7 @@ main .texto-solicita .texto-status p {
 
 .caixa-status:hover {
     border: 1.4px solid #7B1FA2;
+    box-shadow: 0px 0px 8px 0px #7B1FA2;
     transition: 0.1s;
 }
 
@@ -406,15 +412,13 @@ main form button:hover {
 }
 
 .solicitações img {
-    margin: 100px;
+    margin: 90px 40px;
     width: 560px;
     height: 420px;
-    display: flex;
 }
 
 .container {
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
     align-content: center;
 }
@@ -422,7 +426,6 @@ main form button:hover {
 .container h2 {
     color: #7B1FA2;
     font-size: 47px;
-    line-height: 10px;
 }
 
 .container p {
@@ -432,39 +435,24 @@ main form button:hover {
 }
 
 .container a {
-    Width: 288px;
-    Height: 30px;
-    border-radius: 10px;
+    padding: 12px 100px;
+    border-radius: 6px;
     text-align: center;
-    justify-content: left;
     font-size: 25px;
 }
 
 .container-planos {
     display: flex;
-    min-height: 100%;
+    justify-content: space-around;
     width: 90%;
     height: 600px;
     margin: 0 auto;
     padding: 50px 0;
 }
 
-.container-planos .formulario label {
-    font-size: 15px;
-    width: 70%;
-    border-radius: 7px;
-    padding: 5px;
-    margin: 3px 0;
-}
-
-.container-planos .formulario {
-    margin: 0 auto;
-    border: 1px solid #bebebe;
-    border-radius: 15px;
-    margin: 0 10px;
-    padding: 10px;
-    width: 1000px;
-    height: 500px;
+.texto-plano {
+    width: 800px;
+    margin: 0 50px;
 }
 
 .texto-plano h2 {
@@ -479,13 +467,13 @@ footer {
 
 .logo-footer {
     display: flex;
-    justify-content: flex-start;
     align-items: center;
     padding: 30px 0 0 0;
 }
 
 .logo-vertical {
     display: flex;
+    align-items: center;
     margin: 20px 108px;
 }
 
@@ -541,6 +529,7 @@ footer h4 {
     text-align: center;
     color: #fff;
 }
+/*====================*/
 
 .status-link {
     display: inline-block;
