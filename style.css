@@ -438,6 +438,7 @@ main form button:hover {
     padding: 12px 100px;
     border-radius: 6px;
     text-align: center;
+    font-size: 25px;
 }
 
 .container-planos {
