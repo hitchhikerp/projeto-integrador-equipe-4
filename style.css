@@ -402,7 +402,6 @@ main form button:hover {
     background-color: #7B1FA2;
 }
 
-/*==========AREA DE SOLICITAÇÕES==========*/
 .solicitações {
     display: flex;
     width: 100%;
@@ -455,23 +454,11 @@ main form button:hover {
     margin: 0 50px;
 }
 
-.container-planos .formulario {
-    margin: 0 auto;
-    border: 1px solid #bebebe;
-    border-radius: 15px;
-    margin: 0 10px;
-    padding: 10px;
-    width: 1000px;
-    height: 500px;
-}
-
 .texto-plano h2 {
     color: #7B1FA2;
     font-size: 50px;
 }
-/*==============================*/
 
-/*==========ARÉA DO FOOTER==========*/
 footer {
     background-color: #7B1FA2;
     height: 260px;
