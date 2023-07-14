@@ -154,6 +154,8 @@ header .menu ul li a:hover {
     background-color: #9c27b0;
 }
 
+/*==========CARDS DE PLANOS==========*/
+
 section.planos .lista-planos {
     width: 100%;
     display: flex;
@@ -246,7 +248,9 @@ section article h3.titulo-card-individual {
     margin: 0 auto;
     padding: 50px 0;
 }
+/*==============================*/
 
+/*==========AREA DO FORMULARIO==========*/
 .container-form {
     display: flex;
     justify-content: space-evenly;
@@ -322,7 +326,9 @@ section article h3.titulo-card-individual {
     background-position: center;
     border-radius: 30px;
 }
+/*==============================*/
 
+/*==========AREA DE STATUS DE SOLICITAÇÃO==========*/
 main.status {
     display: flex;
     justify-content: space-around;
@@ -396,6 +402,7 @@ main form button:hover {
     background-color: #7B1FA2;
 }
 
+/*==========AREA DE SOLICITAÇÕES==========*/
 .solicitações {
     display: flex;
     width: 100%;
@@ -448,11 +455,23 @@ main form button:hover {
     margin: 0 50px;
 }
 
+.container-planos .formulario {
+    margin: 0 auto;
+    border: 1px solid #bebebe;
+    border-radius: 15px;
+    margin: 0 10px;
+    padding: 10px;
+    width: 1000px;
+    height: 500px;
+}
+
 .texto-plano h2 {
     color: #7B1FA2;
     font-size: 50px;
 }
+/*==============================*/
 
+/*==========ARÉA DO FOOTER==========*/
 footer {
     background-color: #7B1FA2;
     height: 260px;
@@ -522,6 +541,7 @@ footer h4 {
     text-align: center;
     color: #fff;
 }
+/*====================*/
 
 .status-link {
     display: inline-block;
