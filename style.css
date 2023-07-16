@@ -17,7 +17,7 @@ header .logo {
 
 header .menu {
     background-color: #7B1FA2;
-    display: flex; 
+    display: flex;
     justify-content: space-around;
 }
 
@@ -87,7 +87,6 @@ header .menu ul li a:hover {
     height: 600px;
     position: relative;
     overflow: hidden;
-    margin: 50 auto;
     background-color: transparent;
 }
 
@@ -259,7 +258,7 @@ section article h3.titulo-card-individual {
     margin: 10px;
     padding: 28px;
     width: 320px;
-    height: 500px;
+    height: 100%;
     box-shadow: 0px 0px 8px 0px rgba(189, 189, 189, 1);
 }
 
@@ -283,7 +282,7 @@ section article h3.titulo-card-individual {
 }
 
 .formulario form input {
-    width: 276px;
+    width: 88%;
     border: 1px solid #757575;
     border-radius: 8px;
     padding: 6px;
@@ -291,7 +290,7 @@ section article h3.titulo-card-individual {
 }
 
 .form-plan {
-    width: 288px;
+    width: 92%;
     border: 1px solid #757575;
     border-radius: 8px;
     padding: 6px;
@@ -372,7 +371,6 @@ main section input {
 
 main form {
     display: block;
-    justify-content: center;
     text-align: center;
 }
 
@@ -622,5 +620,82 @@ footer h4 {
     .carrossel-caption {
         position: sticky;
     }
-    
+
+    .container-texto-status h2 {
+        font-size: 36px;
+    }
+
+    .texto-plano h2 {
+        font-size: 34px;
+    }
+
+    main .texto-solicita h1.titulo-status {
+        font-size: 34px;
+    }
+
+}
+
+@media (max-width: 440px) {
+
+    .carrossel-caption h1 {
+        font-size: 26px;
+    }
+
+    .carrossel-caption p {
+        font-size: 16px;
+    }
+
+    .formulario {
+        width: 100%;
+    }
+
+    .formulario form button {
+        padding: 6px 10%;
+    }
+
+    .container-texto-status h2 {
+        font-size: 24px;
+    }
+
+    .container-texto-status p {
+        font-size: 14px;
+    }
+
+    .container-texto-status a {
+        padding: 8px 22%
+    }
+
+    .caixa-status {
+        width: 100%;
+        margin: 0;
+    }
+
+    .caixa-status input {
+        width: 90%;
+        margin: 6px 0;
+    }
+
+    main form button {
+        width: 92%;
+        margin: 10px 0;
+    }
+
+    footer {
+        height: 550px;
+    }
+}
+
+@media (max-width: 280px) {
+    .container-form {
+        padding: 0;
+    }
+
+    .formulario {
+        padding: 18px;
+    }
+
+    .texto-plano h2 {
+        font-size: 24px;
+    }
+
 }
