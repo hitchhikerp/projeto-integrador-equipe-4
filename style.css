@@ -17,8 +17,7 @@ header .logo {
 
 header .menu {
     background-color: #7B1FA2;
-    display: flex;
-    justify-content: end;
+    display: flex; 
     justify-content: space-around;
 }
 
@@ -36,7 +35,7 @@ header .menu ul {
 
 .menu nav {
     width: 100%;
-    height: 75px;
+    height: 100%;
 }
 
 .menu nav img {
@@ -49,6 +48,7 @@ header .menu ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .menu span a {
@@ -109,10 +109,10 @@ header .menu ul li a:hover {
 
 .carrossel-caption {
     position: absolute;
-    top: 40%;
-    left: 840px;
+    top: 52%;
+    left: 608px;
     transform: translateY(-50%);
-    padding: 40px;
+    padding: 90px;
     font-size: 40px;
     font-weight: bold;
     background-color: rgba(0, 0, 0, 0);
@@ -154,13 +154,10 @@ header .menu ul li a:hover {
     background-color: #9c27b0;
 }
 
-/*==========CARDS DE PLANOS==========*/
-
 section.planos .lista-planos {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
-    align-items: flex-start;
     flex-wrap: wrap;
 }
 
@@ -179,8 +176,9 @@ section article h3.titulo-card-individual {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    width: 200px;
+    width: 250px;
     padding: 22px 32px;
+    margin: 26px 28px;
     box-shadow: 0px 0px 8px 0px rgba(189, 189, 189, 1);
 }
 
@@ -248,9 +246,7 @@ section article h3.titulo-card-individual {
     margin: 0 auto;
     padding: 50px 0;
 }
-/*==============================*/
 
-/*==========AREA DO FORMULARIO==========*/
 .container-form {
     display: flex;
     justify-content: space-evenly;
@@ -326,13 +322,12 @@ section article h3.titulo-card-individual {
     background-position: center;
     border-radius: 30px;
 }
-/*==============================*/
 
-/*==========AREA DE STATUS DE SOLICITAÇÃO==========*/
 main.status {
     display: flex;
     justify-content: space-around;
-    margin: 110px 55px;
+    flex-wrap: wrap;
+    margin: 110px 28px;
 }
 
 main .texto-solicita h1.titulo-status {
@@ -341,20 +336,14 @@ main .texto-solicita h1.titulo-status {
 }
 
 main .texto-solicita .texto-status {
-    font-size: 21px;
-    width: 320px;
-}
-
-main .texto-solicita .texto-status p {
-    padding: 5px;
+    font-size: 22px;
 }
 
 .caixa-status {
     padding: 22px;
-    margin: 82px 22px;
+    margin: 75px 22px;
     border: 1px solid #bdbdbd;
     border-radius: 20px;
-    width: 380px;
     box-shadow: 0px 0px 8px 0px rgba(189, 189, 189, 1);
 }
 
@@ -404,6 +393,7 @@ main form button:hover {
 
 .solicitações {
     display: flex;
+    justify-content: space-around;
     width: 100%;
     height: 600px;
     background-image: linear-gradient(to bottom, #fff, #e1bee7);
@@ -417,24 +407,21 @@ main form button:hover {
     height: 420px;
 }
 
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
+.container-texto-status {
+    width: 800px;
+    padding: 30px;
 }
 
-.container h2 {
+.container-texto-status h2 {
     color: #7B1FA2;
     font-size: 47px;
 }
 
-.container p {
+.container-texto-status p {
     font-size: 22px;
-    text-align: left;
-
 }
 
-.container a {
+.container-texto-status a {
     padding: 12px 100px;
     border-radius: 6px;
     text-align: center;
@@ -444,7 +431,7 @@ main form button:hover {
     display: flex;
     justify-content: space-around;
     width: 90%;
-    height: 600px;
+    height: 100%;
     margin: 0 auto;
     padding: 50px 0;
 }
@@ -527,6 +514,7 @@ footer h4 {
     font-size: 16px;
     text-align: center;
     color: #fff;
+    margin: 20px;
 }
 
 .status-link {
@@ -542,4 +530,97 @@ footer h4 {
 .status-link:hover {
     background-color: #7B1FA2;
     color: #FDFDFD;
+}
+
+@media (max-width: 960px) {
+    .solicitações img {
+        height: 302px;
+    }
+
+    .carrossel-caption {
+        position: initial;
+        padding: 0px 56px;
+        margin: 90px 0;
+        text-align: center;
+    }
+
+    .carrossel-image img {
+        width: 100%;
+        height: 330px;
+    }
+
+    .img-vertical {
+        display: none;
+    }
+
+    .solicitações img {
+        display: none;
+    }
+
+    .container-texto-status {
+        padding: 145px 35px;
+        text-align: center;
+    }
+
+    .container-planos {
+        flex-wrap: wrap;
+    }
+
+    .texto-solicita {
+        text-align: center;
+    }
+
+    .logo-vertical {
+        margin: 0px 18px;
+    }
+
+}
+
+@media (max-width: 685px) {
+
+    footer {
+        height: 430px;
+    }
+
+    .logo-footer {
+        flex-wrap: wrap;
+        margin: 0 20px
+    }
+
+    .logo-vertical {
+        display: block;
+    }
+
+    footer .logo-vertical p {
+        width: 100%;
+        text-align: left;
+    }
+}
+
+@media (max-width: 660px) {
+
+    .menu nav {
+        text-align: center;
+    }
+
+    header .logo {
+        margin: 0 100px;
+    }
+
+    .icone-menu {
+        justify-content: center;
+    }
+
+    header .menu ul {
+        display: grid;
+    }
+
+    .carrossel-image img {
+        display: none;
+    }
+
+    .carrossel-caption {
+        position: sticky;
+    }
+    
 }
