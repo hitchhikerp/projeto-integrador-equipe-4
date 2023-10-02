@@ -6,7 +6,7 @@ function buscarCEP(event) {
     event.preventDefault();
 
     const cepInput = document.getElementById("cep");
-    const resultadoCEP = document.getElementById("resultadoCEP");
+    // const resultadoCEP = document.getElementById("resultadoCEP");
 
     const cep = cepInput.value;
     const url = `https://viacep.com.br/ws/${cep}/json/`;
