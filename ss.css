@@ -1,80 +1,102 @@
-/* .container-form {
+.container-form {
     display: flex;
     justify-content: space-evenly;
     padding: 50px;
-} */
+}
 
-/* .formulario {
+.formulario {
+    display: flex;
+    flex-direction: column;
     border: 1px solid #bdbdbd;
     border-radius: 15px;
     margin: 10px;
     padding: 28px;
-    width: 320px;
-    height: 100%;
+    width: 600px;
     box-shadow: 0px 0px 8px 0px rgba(189, 189, 189, 1);
-} */
+}
 
-/* .formulario:hover {
+.formulario:hover, .result {
     border: 1.4px solid #7B1FA2;
     box-shadow: 0px 0px 8px 0px #7B1FA2;
     transition: 0.1s;
-} */
+}
 
-/* .formulario h2 {
+.result {
+    margin: 10px;
+    border: 1px solid #bdbdbd;
+    box-shadow: 0px 0px 8px 0px rgba(189, 189, 189, 1);
+    height: 250px;
+    width: 38vh;
+    border-radius: 15px;
+
+}
+
+.result p {
+    align-items: center;
+    align-self: center;
+    margin: 10px;
+    color: #7B1FA2;
+    font-weight: bold;
+}
+
+.formulario h2 {
     color: #7B1FA2;
     font-size: 20px;
-} */
+}
 
-/* .formulario label {
+.formulario label {
     font-size: 12px;
     font-weight: 700;
     border-radius: 8px;
     padding: 6px;
     margin: 4px;
-} */
+}
 
-/* .formulario form input {
-    width: 88%;
+.formulario form input,
+.form-plan {
+    width: 85%;
     border: 1px solid #757575;
     border-radius: 8px;
     padding: 6px;
     margin: 8px;
-} */
+}
 
-/* .form-plan {
-    width: 92%;
-    border: 1px solid #757575;
-    border-radius: 8px;
-    padding: 6px;
-    margin: 8px;
-} */
-
-/* .formulario form button {
+.formulario form button {
     font-size: 14px;
     font-weight: 700;
     background-color: #9c27b0;
     color: #fff;
     border: 1px solid #9c27b0;
-    padding: 8px 118px;
+    padding: 8px 100px; /* Ajustado para usar todo o espaço disponível na largura */
     border-radius: 6px;
-} */
+    text-align: center; /* Alinhar o texto ao centro */
+    cursor: pointer;
+}
 
-/* .formulario form button:hover {
+.formulario form button:hover {
     background-color: #7B1FA2;
     transition: 0.5s;
-    cursor: pointer;
-} */
+}
 
-/* .img-vertical {
+.form-col {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-col-left {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.form-col-right {
+    flex: 1;
+}
+
+.img-vertical {
     width: 350px;
     height: 600px;
     background-image: url(../imagens/Velocity-elemento1.png);
     background-size: cover;
     background-position: center;
     border-radius: 30px;
-} */
-
-
-  
-
-
+}

@@ -12,8 +12,9 @@ function buscarCEP() {
             const { logradouro = "Não encontrado", bairro = "Não encontrado", localidade = "Não encontrado", uf = "Não encontrado" } = data;
 
             const resultadoHTML = `
-        <p name="logradouro">Logradouro: ${logradouro}</p>
-        <p name="bairro">Bairro: ${bairro}</p>
+        <p class:"aa">Rua:</p>   
+        <p name="logradouro">${logradouro}</p>
+        <p name="bairro">Bairro:<br> ${bairro}</p>
         <p name="localidade">Localidade: ${localidade}</p>
         <p name="uf">UF: ${uf}</p>
       `;
@@ -83,5 +84,38 @@ document.addEventListener("DOMContentLoaded", function () {
             });
     });
 });
+
+//________________________________________________________________________________________//
+
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.querySelector("form");
+    const input = document.querySelector("input");
+    const resultado = document.querySelector(".resultado");
+    const statusMensagem = document.getElementById("status-mensagem");
+  
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+  
+      const codigoPedido = input.value;
+  
+      const apiUrl = `https://api/pedido${codigoPedido}`;
+  
+      fetch(apiUrl)
+        .then((response) => response.json())
+        .then((data) => {
+          const numeroPedido = data.numero_pedido;
+          const status = data.status;
+  
+          statusMensagem.textContent = `O seu pedido número ${numeroPedido}, está com o status: ${status}`;
+        })
+        .catch((error) => {
+          statusMensagem.textContent = "Erro ao buscar informações do pedido.";
+          console.error(error);
+        });
+    });
+  });
+  
+
+
 
 
