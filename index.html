@@ -168,15 +168,14 @@
                         </div>
                         <div class="form-col-right">
                             <label for="cep">CEP</label>
-                            <input type="text" name="cep" id="cep" required>
+                            <input type="text" name="cep" id="cep" oninput="buscarCEP()" required>
 
                             <label for="numero">Número da casa</label>
                             <input type="text" name="numerocasa" id="numerocasa" required>
 
-                            <button onclick="buscarCEP(event)">Buscar CEP</button>
                             <div id="resultadoCEP">
                                 <!-- Resultados da consulta ao CEP -->
-                                
+
 
                             </div>
                         </div>

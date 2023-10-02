@@ -1,12 +1,7 @@
-/**
- * Fetches and displays address information based on a given CEP (Brazilian postal code).
- * @param {Event} event - The event object triggered by the button click.
- */
-function buscarCEP(event) {
-    event.preventDefault();
-
+function buscarCEP() {
     const cepInput = document.getElementById("cep");
-    // const resultadoCEP = document.getElementById("resultadoCEP");
+    const numeroInput = document.getElementById("numero");
+    const resultadoCEP = document.getElementById("resultadoCEP");
 
     const cep = cepInput.value;
     const url = `https://viacep.com.br/ws/${cep}/json/`;
