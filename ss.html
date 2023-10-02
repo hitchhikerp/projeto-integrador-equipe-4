@@ -1,0 +1,44 @@
+<section class="contato">
+    <div class="container-form">
+        <div class="formulario">
+            <h2>Contratação de Planos</h2>
+            <form action="">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome">
+                <label for="cpf">CPF</label>
+                <input type="cpf" name="cpf">
+                <label for="telcontato">Telefone para contato</label>
+                <input type="telcontato" name="telcontato">
+                <label for="email">E-mail</label>
+                <input type="email" name="email">
+
+                <label for="cep">CEP</label>
+                <input type="text" name="cep" id="cep">
+                <label for="numero">Número</label>
+                <input type="text" name="numero" id="numero">
+                <button onclick="buscarCEP(event)">Buscar CEP</button>
+                <div id="resultadoCEP">
+                    <!--  resultados da consulta ao CEP -->
+                </div>
+
+
+                <label for="plano">Planos</label>
+                <select class="form-plan">
+                    <option>Plano Básico</option>
+                    <option>Plano Conectado</option>
+                    <option>Plano Família</option>
+                </select>
+                <br>
+                <label for="time">Preferência de horários para visitas</label>
+                <select class="form-plan">
+                    <option>8:00 às 12:00h</option>
+                    <option>12:00 às 17:00h</option>
+                </select>
+                <br>
+                <br>
+                <button type="submit">Contratar</button>
+            </form>
+        </div>
+        <div class="img-vertical"></div>
+    </div>
+</section>

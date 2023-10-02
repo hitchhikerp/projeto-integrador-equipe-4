@@ -1,0 +1,70 @@
+.carrossel {
+    width: 100%;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.carrossel-image {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.carrossel-image.active {
+    display: block;
+}
+
+.carrossel-image img {
+    width: 700px;
+    height: 500px;
+    object-fit: contain;
+}
+
+.carrossel-caption {
+    position: absolute;
+    top: 52%;
+    left: 608px;
+    transform: translateY(-50%);
+    padding: 90px;
+    font-size: 40px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0);
+    color: #9c27b0;
+}
+
+.carrossel-caption h1 {
+    font-size: 40px;
+    color: #9c27b0;
+}
+
+.carrossel-caption p {
+    font-size: 20px;
+    color: #757575;
+}
+
+
+.carrossel-navigation {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.carrossel-navigation button {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: none;
+    background-color: #ccc;
+    margin: 0 5px;
+    border-radius: 50%;
+    padding: 0;
+    cursor: pointer;
+}
+
+.carrossel-navigation button.active {
+    background-color: #9c27b0;
+}

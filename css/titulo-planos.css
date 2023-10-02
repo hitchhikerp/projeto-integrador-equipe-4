@@ -1,0 +1,93 @@
+section.planos .lista-planos {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+section h2.titulo-cards {
+    color: #9c27b0;
+}
+
+section article h3.titulo-card-individual {
+    color: #9c27b0;
+    font-size: 20px;
+}
+
+.lista-planos article.card {
+    border: 1px solid #bdbdbd;
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 250px;
+    padding: 22px 32px;
+    margin: 26px 28px;
+    box-shadow: 0px 0px 8px 0px rgba(189, 189, 189, 1);
+}
+
+.lista-planos article.card:hover {
+    border: 1.4px solid #7B1FA2;
+    box-shadow: 0px 0px 8px 0px #7B1FA2;
+    transition: 0.1s;
+}
+
+.lista-planos article.card p {
+    text-align: center;
+}
+
+.lista-planos article h3.price {
+    color: #9c27b0;
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.lista-planos article a {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: none;
+    background-color: #9c27b0;
+    border: 1px solid #9c27b0;
+    border-radius: 18px;
+    padding: 6px 30px;
+}
+
+.lista-planos article a:hover {
+    background-color: #7B1FA2;
+    border-color: #7B1FA2;
+    transition: 0.3s;
+}
+
+.lista-planos article .imagem-planos {
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.titulo {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+}
+
+.titulo h2 {
+    text-align: center;
+    color: #000000;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.lista-planos {
+    min-height: 600px;
+    width: 500px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
