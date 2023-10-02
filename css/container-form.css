@@ -1,10 +1,10 @@
-/* .container-form {
+ .container-form {
     display: flex;
     justify-content: space-evenly;
     padding: 50px;
-} */
+} 
 
-/* .formulario {
+ .formulario {
     border: 1px solid #bdbdbd;
     border-radius: 15px;
     margin: 10px;
@@ -12,44 +12,44 @@
     width: 320px;
     height: 100%;
     box-shadow: 0px 0px 8px 0px rgba(189, 189, 189, 1);
-} */
+} 
 
-/* .formulario:hover {
+ .formulario:hover {
     border: 1.4px solid #7B1FA2;
     box-shadow: 0px 0px 8px 0px #7B1FA2;
     transition: 0.1s;
-} */
+} 
 
-/* .formulario h2 {
+.formulario h2 {
     color: #7B1FA2;
     font-size: 20px;
-} */
+} 
 
-/* .formulario label {
+ .formulario label {
     font-size: 12px;
     font-weight: 700;
     border-radius: 8px;
     padding: 6px;
     margin: 4px;
-} */
+} 
 
-/* .formulario form input {
+ .formulario form input {
     width: 88%;
     border: 1px solid #757575;
     border-radius: 8px;
     padding: 6px;
     margin: 8px;
-} */
+} 
 
-/* .form-plan {
+ .form-plan {
     width: 92%;
     border: 1px solid #757575;
     border-radius: 8px;
     padding: 6px;
     margin: 8px;
-} */
+} 
 
-/* .formulario form button {
+.formulario form button {
     font-size: 14px;
     font-weight: 700;
     background-color: #9c27b0;
@@ -57,22 +57,22 @@
     border: 1px solid #9c27b0;
     padding: 8px 118px;
     border-radius: 6px;
-} */
+} 
 
-/* .formulario form button:hover {
+.formulario form button:hover {
     background-color: #7B1FA2;
     transition: 0.5s;
     cursor: pointer;
-} */
+} 
 
-/* .img-vertical {
+ .img-vertical {
     width: 350px;
     height: 600px;
     background-image: url(../imagens/Velocity-elemento1.png);
     background-size: cover;
     background-position: center;
     border-radius: 30px;
-} */
+} 
 
 
   
