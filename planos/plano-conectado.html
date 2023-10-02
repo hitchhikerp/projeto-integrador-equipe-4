@@ -46,34 +46,43 @@
                         <li class="vantagens-item">Netflix 1 tela</li>
                     </ul>
             </div>
+
             <div class="formulario">
                 <h2>Contratação de Planos</h2>
-                <form action="">
+                <form action="" id="contratacao-form">
                     <label for="nome">Nome</label>
-                    <input type="text" name="nome">
+                    <input type="text" id="nome" name="nome" required>
+
                     <label for="cpf">CPF</label>
-                    <input type="cpf" name="cpf">
+                    <input type="text" id="cpf" name="cpf" required>
+
                     <label for="telcontato">Telefone para contato</label>
-                    <input type="telcontato" name="telcontato">
+                    <input type="tel" id="telcontato" name="telcontato" required>
+
                     <label for="email">E-mail</label>
-                    <input type="email" name="emai">
+                    <input type="email" id="email" name="email" required>
+
                     <label for="cep">CEP</label>
-                    <input type="text" name="cep" id="cep">
-                    <label for="numero">Número</label>
-                    <input type="text" name="numero" id="numero">
-                    <button onclick="buscarCEP(event)">Buscar CEP</button>
-                    <div id="resultadoCEP">
-                        <!--  resultados da consulta ao CEP -->
+                    <input type="text" name="cep" id="cep" oninput="buscarCEP()" required>
+
+                    <label for="numero">Número da casa</label>
+                    <input type="text" name="numerocasa" id="numerocasa" required>
+
+                    <div class="result" id="resultadoCEP">
+                        <!-- Resultados da consulta ao CEP -->
                     </div>
+
                     <label for="plano">Planos</label>
-                    <select class="form-plan">
+                    <select class="form-plan" type="plan" name="plan" id="plan" required>
+                        <option disabled selected>Selecionar plano</option>
+                        <option>Plano Básico</option>
                         <option>Plano Conectado</option>
                         <option>Plano Família</option>
-                        <option>Plano Básico</option>
                     </select>
-                    <br>
+
                     <label for="time">Preferência de horários para visitas</label>
-                    <select class="form-plan">
+                    <select class="form-plan" type="time" name="time" id="time" required>
+                        <option disabled selected>Selecionar Horario</option>
                         <option>8:00 às 12:00h</option>
                         <option>12:00 às 17:00h</option>
                     </select>
@@ -104,9 +113,9 @@
         <hr class="b">
         <h4>© Projeto desenvolvido na academia Aprendiz Vivo Tech - Gama Academy & Telefónica Vivo</h4>
     </footer>
-    
-    <script src="../js/script.js"></script>
-    <script src="../js/index.js"></script>
-</body>
 
+    <script src="../js/index.js"></script>
+    <script src="../js/addl.js"></script>
+    <script src="../js/script.js"></script>
+</body>
 </html>
