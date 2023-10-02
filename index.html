@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="imagens/Icons/foguete-ciano.png" type="image/x-icon">
 
+<link rel="stylesheet" href="ss.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/carrossel.css">
     <link rel="stylesheet" href="css/container-form.css">
@@ -164,35 +165,40 @@
 
                             <label for="email">E-mail</label>
                             <input type="email" id="email" name="email" required>
+
+                            <label for="plano">Planos</label>
+                            <select class="form-plan" type="plan" name="plan" id="plan" required>
+                                <option disabled selected>Selecionar plano</option>
+                                <option>Plano Básico</option>
+                                <option>Plano Conectado</option>
+                                <option>Plano Família</option>
+                            </select>
+
+                            <label for="time">Preferência de horários para visitas</label>
+                            <select class="form-plan" type="time" name="time" id="time" required>
+                                <option disabled selected>Selecionar Horario</option>
+                                <option>8:00 às 12:00h</option>
+                                <option>12:00 às 17:00h</option>
+                            </select>
+
                         </div>
 
-                        <label for="cep">CEP</label>
-                        <input type="text" name="cep" id="cep" oninput="buscarCEP()" required>
-
-                        <label for="numero">Número da casa</label>
-                        <input type="text" name="numerocasa" id="numerocasa" required>
-
-                        <div id="resultadoCEP">
-                            <!-- Resultados da consulta ao CEP -->
-
+                        <div class="form-col-right">
+                            <label for="cep">CEP</label>
+                            <input type="text" name="cep" id="cep" oninput="buscarCEP()" required>
+    
+                            <label for="numero">Número da casa</label>
+                            <input type="text" name="numerocasa" id="numerocasa" required>
+    
+                            <div class="result" id="resultadoCEP">
+                                <!-- Resultados da consulta ao CEP -->
+                                <h1></h1>
+                            </div>
+    
+    
                         </div>
                     </div>
-                    <label for="plano">Planos</label>
-                    <select class="form-plan" type="plan" name="plan" id="plan" required>
-                        <option disabled selected>Selecionar plano</option>
-                        <option>Plano Básico</option>
-                        <option>Plano Conectado</option>
-                        <option>Plano Família</option>
-                    </select>
-                    <br>
-                    <label for="time">Preferência de horários para visitas</label>
-                    <select class="form-plan" type="time" name="time" id="time" required>
-                        <option disabled selected>Selecionar Horario</option>
-                        <option>8:00 às 12:00h</option>
-                        <option>12:00 às 17:00h</option>
-                    </select>
-                    <br>
-                    <br>
+                    
                     <button type="submit">Contratar</button>
                 </form>
             </div>
