@@ -12,8 +12,7 @@ function buscarCEP() {
             const { logradouro = "Não encontrado", bairro = "Não encontrado", localidade = "Não encontrado", uf = "Não encontrado" } = data;
 
             const resultadoHTML = `
-        <p class:"aa">Rua:</p>   
-        <p name="logradouro">${logradouro}</p>
+        <p name="logradouro">Rua/Avenida: <br>${logradouro}</p>
         <p name="bairro">Bairro:<br> ${bairro}</p>
         <p name="localidade">Localidade: ${localidade}</p>
         <p name="uf">UF: ${uf}</p>

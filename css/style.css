@@ -26,10 +26,6 @@ header .logo {
 }
 
 
-
-
-
-
 main.status {
     display: flex;
     justify-content: space-around;
@@ -46,12 +42,25 @@ main .texto-solicita .texto-status {
     font-size: 22px;
 }
 
-.caixa-status {
+.caixa-status  {
     padding: 22px;
     margin: 75px 22px;
-    border: 1px solid #bdbdbd;
+    border: 1px solid #bdbdbde1;
     border-radius: 20px;
     box-shadow: 0px 0px 8px 0px rgba(189, 189, 189, 1);
+}
+
+.resp {
+    background-color: #bdbdbd;
+    border-radius: 6px;
+    box-shadow: 0px 0px 5px 0px rgba(189, 189, 189, 1);
+    
+
+}
+
+.resp {
+    border: 1px solid #9c27b0;
+    border-radius: 6px;
 }
 
 .caixa-status:hover {

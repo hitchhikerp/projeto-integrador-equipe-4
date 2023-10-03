@@ -23,11 +23,10 @@
 
 .result {
     margin: 10px;
-    border: 1px solid #bdbdbd;
+    border: 1px solid #9c27b0;
     box-shadow: 0px 0px 8px 0px rgba(189, 189, 189, 1);
-    height: 250px;
-    width: 38vh;
     border-radius: 15px;
+    background-color: #dcdcdc;
 
 }
 
@@ -62,15 +61,19 @@
 }
 
 .formulario form button {
+    display: flex;
     font-size: 14px;
     font-weight: 700;
     background-color: #9c27b0;
     color: #fff;
     border: 1px solid #9c27b0;
-    padding: 8px 100px; /* Ajustado para usar todo o espaço disponível na largura */
+    padding: 8px 250px; /* Ajustado para usar todo o espaço disponível na largura */
     border-radius: 6px;
     text-align: center; /* Alinhar o texto ao centro */
     cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 .formulario form button:hover {
