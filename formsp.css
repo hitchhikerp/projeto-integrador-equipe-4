@@ -98,7 +98,7 @@
 .img-vertical {
     width: 350px;
     height: 600px;
-    background-image: url(../imagens/Velocity-elemento1.png);
+    background-image: url(imagens/Velocity-elemento1.png);
     background-size: cover;
     background-position: center;
     border-radius: 30px;
