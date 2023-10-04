@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
     telcontatoInput.addEventListener('input', formatPhoneNumber);
   });
 
+//________________________________________________________________________________________//
 
 
   // Função para formatar o CPF
