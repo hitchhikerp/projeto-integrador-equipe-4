@@ -129,7 +129,7 @@
                     <li class="vantagens-item">Netflix 1 tela</li>
                 </ul>
                 <h3 class="price">R$ 89,90</h3>
-                <a href="plano-conectado.html">Escolher Plano</a>
+                <a href="planos/plano-conectado.html">Escolher Plano</a>
             </article>
             <article class="card">
                 <h3 class="titulo-card-individual">Plano Família</h3>
@@ -141,7 +141,7 @@
                     <li class="vantagens-item">Netflix 4 tela</li>
                 </ul>
                 <h3 class="price">R$ 110,90</h3>
-                <a href="plano-familia.html">Escolher Plano</a>
+                <a href="planos/plano-familia.html">Escolher Plano</a>
             </article>
         </div>
     </section>
@@ -154,7 +154,7 @@
                     <div class="form-col">
                         <div class="form-col-left">
                             <label for="nome">Nome</label>
-                            <input type="text" id="nome" name="nome" required>
+                            <input type="text" id="nome" name="nome_completo" required>
 
                             <label for="cpf">CPF</label>
                             <input type="text" id="cpf" name="cpf" required>
@@ -168,16 +168,16 @@
                             <label for="plano">Planos</label>
                             <select class="form-plan" type="plan" name="plan" id="plan" required>
                                 <option disabled selected>Selecionar plano</option>
-                                <option>Plano Básico</option>
-                                <option>Plano Conectado</option>
-                                <option>Plano Família</option>
+                                <option value="Plano Básico">Plano Básico</option>
+                                <option value="Plano Conectado">Plano Conectado</option>
+                                <option value="Plano Família">Plano Família</option>
                             </select>
 
                             <label for="time">Preferência de horários para visitas</label>
                             <select class="form-plan" type="time" name="time" id="time" required>
                                 <option disabled selected>Selecionar Horario</option>
-                                <option>8:00 às 12:00h</option>
-                                <option>12:00 às 17:00h</option>
+                                <option value="8:00">8:00 às 12:00h</option>
+                                <option value="12:00">12:00 às 17:00h</option>
                             </select>
 
                         </div>

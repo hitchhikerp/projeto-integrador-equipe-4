@@ -52,7 +52,7 @@
                 <h2>Contratação de Planos</h2>
                 <form action="" id="contratacao-form">
                     <label for="nome">Nome</label>
-                    <input type="text" id="nome" name="nome" required>
+                    <input type="text" id="nome_completo" name="nome_completo" required>
 
                     <label for="cpf">CPF</label>
                     <input type="text" id="cpf" name="cpf" required>
@@ -71,21 +71,26 @@
 
                     <div class="result" id="resultadoCEP">
                         <!-- Resultados da consulta ao CEP -->
+                        <p><strong>CEP:</strong> <span id="cep-info"></span></p>
+                        <p><strong>Logradouro:</strong> <span id="logradouro-info"></span></p>
+                        <p><strong>Bairro:</strong> <span id="bairro-info"></span></p>
+                        <p><strong>Localidade:</strong> <span id="localidade-info"></span></p>
+                        <p><strong>UF:</strong> <span id="uf-info"></span></p>
                     </div>
 
                     <label for="plano">Planos</label>
                     <select class="form-plan" type="plan" name="plan" id="plan" required>
                         <option disabled selected>Selecionar plano</option>
-                        <option>Plano Básico</option>
-                        <option>Plano Conectado</option>
-                        <option>Plano Família</option>
+                        <option value="Plano Básico">Plano Básico</option>
+                        <option value="Plano Conectado">Plano Conectado</option>
+                        <option value="Plano Família">Plano Família</option>
                     </select>
 
                     <label for="time">Preferência de horários para visitas</label>
                     <select class="form-plan" type="time" name="time" id="time" required>
                         <option disabled selected>Selecionar Horario</option>
-                        <option>8:00 às 12:00h</option>
-                        <option>12:00 às 17:00h</option>
+                        <option value="8:00">8:00 às 12:00h</option>
+                        <option value="12:00">12:00 às 17:00h</option>
                     </select>
                     <br>
                     <br>
